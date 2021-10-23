@@ -1,4 +1,7 @@
 import 'package:flutter/material.dart';
+import 'package:vintage_games/view-games.dart';
+
+import 'constants/strings.dart';
 
 void main() {
   runApp(MyApp());
@@ -22,7 +25,8 @@ class MyApp extends StatelessWidget {
         // is not restarted.
         primarySwatch: Colors.blue,
       ),
-      home: MyHomePage(title: 'Bruce’s Retro Games'),
+      home: GamesList(),
+      // home: MyHomePage(title: MyStrings.appName),
     );
   }
 }
@@ -91,7 +95,7 @@ class BruceCard extends StatelessWidget {
                 child: Padding(
                   padding: const EdgeInsets.all(8.0),
                   child: Center(
-                    child: Text('Bruce Ttitle',
+                    child: Text(MyStrings.title,
                         style: TextStyle(color: Colors.black, fontSize: 15)),
                   ),
                 ),
