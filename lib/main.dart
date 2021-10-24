@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:vintage_games/view-games.dart';
+import 'package:vintage_games/wish-list/wishListHome.dart';
 
 import 'constants/strings.dart';
 
@@ -25,7 +25,7 @@ class MyApp extends StatelessWidget {
         // is not restarted.
         primarySwatch: Colors.blue,
       ),
-      home: GamesList(),
+      home: HomeScreen(),
       // home: MyHomePage(title: MyStrings.appName),
     );
   }
